@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>RSA SecurRPG</title>
+  <script type="text/javascript" src='jquery-2.1.1.min.js'></script>
+  <script type="text/javascript" src='store.min.js'></script>
+  <script type="text/javascript" src="utils.js"></script>
+  <script type="text/javascript" src='application.js'></script>
+
+  <!-- font trial  -->
+  <script type="text/javascript">
+      (function() {
+          var path = '//easy.myfonts.net/v2/js?sid=146595(font-family=Dutch+Mediaeval+Bold)&sid=155102(font-family=Dutch+Mediaeval+Book+Regular)&sid=155104(font-family=Dutch+Mediaeval+Book+Bold)&key=2RPu3j7iD1',
+              protocol = ('https:' == document.location.protocol ? 'https:' : 'http:'),
+              trial = document.createElement('script');
+          trial.type = 'text/javascript';
+          trial.async = true;
+          trial.src = protocol + path;
+          var head = document.getElementsByTagName("head")[0];
+          head.appendChild(trial);
+      })();
+  </script>
+  <link href="application.css" rel="stylesheet">
+</head>
+<body>
+
+<div id='sidebar'>
+<h2>Character</h2>
+<table border="0" id='character_sheet'>
+  <tr><th>hp</th><td id='hp'></td></tr>
+  <tr><th>lv</th><td id='lv'></td></tr>
+  <tr><th>$$</th><td id='coins'></td></tr>
+  <tr><th>xp</th><td id='xp'></td></tr>
+  <tr><th>to_level:</th><td id='to_level'></td></tr>
+</table>
+  <div id='menu'>
+    <a href='#' id='new_game'>new game</a>
+  </div>
+</div>
+
+
+<div id='content'>
+  <div id='form'>
+    <h1>RSA SecurRPG</h1>
+    <input type='text' id='seed' value='' placeholder='RSA SecurID code'>
+    <input type='button' id='submit' value='submit'>
+  </div>
+  <div id='turn_log' style='display: none;'></div>
+</div>
+
+<script type="text/javascript">
+  $(document).ready(function(){
+    game.init();
+    setTimeout(function(){ $('#mfPreviewBar').hide() }, 3000);
+  });
+</script>
+</body>
+</html>

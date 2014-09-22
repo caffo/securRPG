@@ -1,0 +1,111 @@
+/* Core styles */
+
+@import url(http://fonts.googleapis.com/css?family=Noticia+Text);
+
+* {
+  font-family: 'Dutch Mediaeval Book Regular';
+}
+
+body {
+    margin: 0px;
+    background: #EEE4D8;
+}
+
+/* Character sheet */
+
+#character_sheet {
+    margin-top: 20px;
+    padding-left: 10px;
+    width: 180px;
+}
+
+table {
+    width: 130px;
+}
+
+th {
+    text-align: left;
+}
+
+td {
+    text-align: right;
+}
+
+/* Misc styles */
+
+h1 {
+  font-size 35px;
+  padding-top: 20px;
+}
+
+h2 {
+    border-bottom: 1px solid #323321;
+    padding-left: 10px;
+    padding-bottom: 10px;
+    margin-top: 10px;
+    color: #D9D0C3;
+}
+
+/* Form area */
+
+#seed {
+    height: 29px;
+    font-weight: bold;
+}
+
+#form {
+    text-align: center;
+    margin-top: 20px;
+}
+
+input {
+    font-size: 18px;
+}
+
+input[type=button] {
+    background-color: #323321;
+    border: 0;
+    color: #D9D0C3;
+    font-family: 'Dutch Mediaeval Book Regular';
+    padding: 5px;
+}
+
+#turn_log {
+    margin-top: 20px;
+    background: #D9D0C3;
+    width: 500px;
+    padding: 20px;
+    line-height: 22px;
+    border-left: 5px solid #C2BAAE;
+    margin: 20px auto auto;
+}
+
+/* Sidebar */
+
+#sidebar {
+    background-color: #261A09;
+    color: #D9D0C3;
+    width: 200px;
+    margin: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+}
+
+#sidebar a {
+    display: block;
+    width: 180px;
+    border: 0;
+    color: #D9D0C3;
+    font-family: 'Dutch Mediaeval Book Regular';
+    padding: 10px;
+    background-color: rgba(0,0,0,0.4);
+    text-align: center;
+    font-size: 22px;
+}
+
+#menu {
+    padding-bottom: 20px;
+    margin-top: 20px;
+}
