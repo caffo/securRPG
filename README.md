@@ -1,7 +1,7 @@
 # SecurRPG
 
 
-A long time ago I created a game based on RSA secureID token seeds. This app implements some of the game's logic, allowing me to better balance the rules.
+A long time ago I created a game based on [RSA secureID token](http://en.wikipedia.org/wiki/SecurID) seeds. This app implements some of the game's logic, allowing me to better balance the rules.
 
 ## Rules
 
